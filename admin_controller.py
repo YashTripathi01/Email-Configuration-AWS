@@ -1,7 +1,7 @@
 from datetime import datetime
 
 
-def admin_email(email, name, phone, msg):
+def admin_email(email, first_name, last_name, phone, msg):
     return f'''<!DOCTYPE html>
 <html lang="en">
     <head>
@@ -303,7 +303,7 @@ def admin_email(email, name, phone, msg):
                                                                                 font-weight: 600;
                                                                                 line-height: 1.75;
                                                                             "
-                                                                            >{name}</span
+                                                                            >{first_name}{last_name}</span
                                                                         >
                                                                     </td>
                                                                 </tr>
@@ -427,12 +427,17 @@ def admin_email(email, name, phone, msg):
                                                                     line-height: 1.36;
                                                                 "
                                                             >
-                                                                78/B - Park
-                                                                Avenue
-                                                                Building,<br />New
-                                                                Street, Grant
-                                                                Road,<br />
-                                                                Mumbai 400012
+                                                                B-604 Damji
+                                                                Shamji Corporate
+                                                                Square Off A G
+                                                                Link Road , Next
+                                                                to Kanara
+                                                                Business Centre
+                                                                Pant Nagar
+                                                                Ghatkopar East
+                                                                Mumbai City
+                                                                Maharashtra-
+                                                                400075
                                                             </p>
                                                         </td>
                                                         <td

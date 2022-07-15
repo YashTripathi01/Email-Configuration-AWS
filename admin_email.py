@@ -5,7 +5,7 @@ from constants import *
 from admin_controller import *
 
 
-def admin_send_mail(email, name, phone, msg):
+def admin_send_mail(email, first_name, last_name, phone, msg):
     subject = 'noreply-xyz@asd.com'
     sender_email = SENDER_EMAIL
     password = PASSWORD
@@ -17,7 +17,7 @@ def admin_send_mail(email, name, phone, msg):
     message['Subject'] = subject
 
     # to use html for message
-    html = admin_email(receiver_email, name, phone, msg)
+    html = admin_email(receiver_email, first_name, last_name, phone, msg)
 
     message.add_alternative(html, subtype='html')
 

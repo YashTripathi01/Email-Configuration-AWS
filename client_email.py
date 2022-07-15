@@ -5,7 +5,7 @@ from constants import *
 from client_controller import *
 
 
-def client_send_mail(email, name, msg):
+def client_send_mail(email, first_name, last_name, msg):
     subject = 'noreply-xyz@asd.com'
     sender_email = SENDER_EMAIL
     password = PASSWORD
@@ -17,7 +17,7 @@ def client_send_mail(email, name, msg):
     message['Subject'] = subject
 
     # to use html for message
-    html = client_email(name, msg)
+    html = client_email(first_name, last_name, msg)
 
     message.add_alternative(html, subtype='html')
 
