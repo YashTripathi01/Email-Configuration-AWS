@@ -7,7 +7,7 @@ import json
 
 
 def lambda_handler(event, context):
-    if event['email'] != '' & event['first_name'] != '' & event['last_name'] != '' & event['phone'] != '':
+    if event['email'] != '' and event['first_name'] != '' and event['last_name'] != '' and event['phone'] != '':
         user_email = event['email']
         user_first_name = event['first_name']
         user_last_name = event['last_name']
@@ -24,7 +24,7 @@ def lambda_handler(event, context):
 
         return res()
 
-    elif event['email'] != '':
+    elif event['email'] != '' and event['first_name'] == '' and event['last_name'] == '' and event['phone'] == '':
         user_email = event['email']
 
         news_letter(user_email)

@@ -110,7 +110,7 @@ def client_email(first_name, last_name, msg):
                                                     "
                                                     >Dear,
                                                     <span style="color: #335291"
-                                                        >{first_name}{last_name}</span
+                                                        >{first_name} {last_name}</span
                                                     ></span
                                                 >
                                             </td>
