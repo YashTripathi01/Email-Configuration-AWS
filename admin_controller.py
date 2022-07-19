@@ -303,7 +303,7 @@ def admin_email(email, first_name, last_name, phone, msg):
                                                                                 font-weight: 600;
                                                                                 line-height: 1.75;
                                                                             "
-                                                                            >{first_name}{last_name}</span
+                                                                            >{first_name} {last_name}</span
                                                                         >
                                                                     </td>
                                                                 </tr>

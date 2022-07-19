@@ -6,7 +6,7 @@ from client_controller import *
 
 
 def client_send_mail(email, first_name, last_name, msg):
-    subject = 'noreply-xyz@asd.com'
+    subject = f'Enquiry from: {first_name} {last_name}'
     sender_email = SENDER_EMAIL
     password = PASSWORD
     receiver_email = email

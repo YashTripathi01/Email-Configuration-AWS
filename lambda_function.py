@@ -14,10 +14,10 @@ def lambda_handler(event, context):
         user_phone = event['phone']
         user_msg = event['message']
 
+        client_send_mail(user_email, user_first_name, user_last_name, user_msg)
+
         admin_send_mail(user_email, user_first_name,
                         user_last_name, user_phone, user_msg)
-
-        client_send_mail(user_email, user_first_name, user_last_name, user_msg)
 
         add_to_sheet(user_email, user_first_name,
                      user_last_name, user_phone, user_msg)

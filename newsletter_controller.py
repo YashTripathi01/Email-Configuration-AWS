@@ -17,4 +17,4 @@ def news_letter(email):
 
     sheet.append_row(new_row)
 
-    pprint(new_row)
+    pprint('Successfully added to sheets')

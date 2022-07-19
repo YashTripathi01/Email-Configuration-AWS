@@ -17,4 +17,4 @@ def add_to_sheet(email, first_name, last_name, phone, msg):
 
     sheet.append_row(new_row)
 
-    pprint(new_row)
+    pprint('Successfully added to sheets')
